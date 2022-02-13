@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>zomato</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .header-img{
+            position:relative;
+            width:10vw;
+            height: 60px;
+            text-overflow: center;
+            background-image: linear-gradient(to right ,rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapersdsc.net%2Fwp-content%2Fuploads%2F2016%2F09%2FFood-HD-Background.png&f=1&nofb=1");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        header{ 
+            width:100vw;
+            height: 100px;
+        }
+        .nav-menu{
+            width:60vw;
+            height: 60px;
+            /* color:black; */
+        }
+        .zomato{
+            display:block;
+            font-weight: bolder;
+            color: white;
+            text-align:center;
+            margin:0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+        }
+        .header-flex{
+            margin-top:100px ;
+        }
+        .nav-link{
+            border-bottom: 0px solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+        .nav-link:hover{
+            border-bottom: 5px solid white;
+        }
+        .search-box{
+            width:20vw;
+            height:50px;
+            background-color:white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+              padding-left:20px;
+              outline: none;
+              font-weight: bold;
+              font-size:18px;
+        }
+        .search-btn{
+            width:110px;
+            background-color:red;
+            color:white;
+            border:none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-weight: bold;
+            font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id ="headre-img">
+        <header>
+            <div class="d-flex justify-content-center">
+                <img  src="zomato-wallpapers.jpg">
+                <div id="nav-menu">
+                    <p class="float-left text-white m-0 mt-3">Get the app</p>
+                    <p class="float-left text-white m-0 mt-3 h4 nav-link">sing up</p>
+                    <p class="float-left text-white m-0 mt-3 h4 nav-link">login</p>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <h1 class ="zomato">Zomato</h1>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <input type="text" placeholder="search for dishes or cuisines..."class="search-box"/>
+                <button class="search-btn">search</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
